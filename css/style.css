@@ -5,37 +5,45 @@ html {
 
 body {
     margin: 0;
-    min-width: 350px;
     background-color: #fafafa;
 }
 
-header {
-    width: 100%;
-}
-
 main {
+    text-align: center;
+    width: 90%;
+    min-width: 300px;
+    margin: auto;
     height: 1000px;
 }
 
-nav ul {
-    background-color: white;
+#logo a {
+    color: #4C43E0;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: none;
+}
+
+ul {
     margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
     padding: 6px;
     list-style: none;
     overflow: hidden;
     box-shadow: 0 1px 2px #0000003d;
 }
 
-nav li {
+ul li {
     float: left;
 }
 
-nav a {
+ul a {
     display: block;
     color: #000000;
-    min-width: 90px;
+    min-width: 80px;
     padding: 10px;
-    margin: 1px 3px;
+    margin: 0 3px;
     text-decoration: none;
     text-align: center;
     font-weight: 500;
@@ -43,12 +51,8 @@ nav a {
     transition: ease-in 100ms;
 }
 
-nav a:hover {
+ul a:hover {
     box-shadow: 1px 2px 3px #0000003d;
-}
-
-#banner img {
-    width: 100%;
 }
 
 p {
@@ -73,5 +77,74 @@ p {
 
 footer {
     height: 300px;
-    background-color: #4b4b4b;
+}
+
+.destaque {
+    background-color: #4C43E0;
+    color: #ffffff;
+}
+
+.botaolink {
+    background-color: #ffffff;
+    display: block;
+    color: #000000;
+    min-width: 80px;
+    padding: 10px;
+    margin: 0 3px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 1000px;
+    transition: ease-in 100ms;
+}
+
+.botaolink:hover {
+    color: #ffffff;
+    background-color: #4C43E0;
+}
+
+#cabecalho {
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#lugares {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#lugares img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 55%;
+    object-fit: cover;
+}
+
+#lugares div {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    background-position: center;
+    margin: 10px;
+    border-radius: 8px;
+    height: 380px;
+    width: 30%;
+    min-width: 290px;
+    box-shadow: 2px 4px 4px #0000001a;
+}
+
+#lugares .botaolink {
+    margin: auto;
+    width: 50%;
+}
+
+#lugares h3 {
+    margin-top: auto;
 }

@@ -5,28 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <title>Início</title>
 </head>
 
 <body>
     <header id="header">
-        <nav>
-            <ul>
-                <li><a href="">Pacotes</a></li>
-                <li><a href="">Promoções</a></li>
-                <li><a href="">Contato</a></li>
-                <li><a href="">Quem Somos</a></li>
-                <li style="float:right"><a style="background-color: #4C43E0; color: #ffffff" href="">Login</a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li id="logo">
+                <a href=""><i class="bi bi-airplane-fill"></i> Turismo.com</a>
+            </li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="">Pacotes</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Sobre</a></li>
+            <li style="margin-left: auto"><a class="destaque" href="">Login</a></li>
+        </ul>
     </header>
 
     <main>
-        <div id="banner">
-            <img src="./img/montanha.jpg" alt="Banner">
-        </div>
+        <section id="destinos">
+            <h1>Descubra os destinos mais populares</h1>
+            <div id="lugares">
+                <div>
+                    <img src="./img/ny.webp" alt="">
+                    <h3>Nova York, EUA</h3>
+                    <p>Visite a Estátua da Liberdade com a histórica Ponte do Brooklyn.</p>
+                    <a class="botaolink" href="">Eu quero!</a>
+                </div>
+                <div>
+                    <img src="./img/londres.jpg" alt="">
+                    <h3>Londres, Inglaterra</h3>
+                    <p>Conheça o Big Ben e o Palácio de Buckingham, símbolos da cultura britânica.</p>
+                    <a class="botaolink" href="">Eu quero!</a>
+                </div>
+                <div>
+                    <img src="./img/rj.webp" alt="">
+                    <h3>Rio de Janeiro, Brasil</h3>
+                    <p>Mergulhe na praia de Copacabana e aproveite a vista do Pão de Açúcar.</p>
+                    <a class="botaolink" href="">Eu quero!</a>
+                </div>
+            </div>
+        </section>
         <p>teste</p>
         <p>w</p>
         <p>w</p>
@@ -40,7 +61,7 @@
         <p>w</p>
     </main>
 
-    <footer>
+    <footer class="destaque">
         <p>teste</p>
     </footer>
     <a href="#header" id="voltar_topo">Voltar ao topo <i class="bi-arrow-up"></i></a>
