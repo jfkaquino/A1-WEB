@@ -13,7 +13,6 @@ main {
     width: 90%;
     min-width: 300px;
     margin: auto;
-    height: 1000px;
 }
 
 p {
@@ -84,12 +83,12 @@ ul a:hover {
     color: #ffffff;
 }
 
-.botaolink {
+.botao_link {
     background-color: #ffffff;
-    box-shadow: 3px 4px 4px #0000003d;
+    box-shadow: 0 8px 16px #00000033;
     display: block;
     color: #000000;
-    min-width: 80px;
+    min-width: 50px;
     padding: 10px;
     margin: 0 3px;
     text-decoration: none;
@@ -99,7 +98,7 @@ ul a:hover {
     transition: background-color 0.1s ease;
 }
 
-.botaolink:hover {
+.botao_link:hover {
     color: #ffffff;
     background-color: #4C43E0;
 }
@@ -115,46 +114,45 @@ ul a:hover {
     flex-wrap: wrap;
 }
 
-#lugares {
+#destinos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#lugares img {
+#destinos img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     height: 60%;
     object-fit: cover;
 }
 
-#lugares div {
+#destinos div {
     display: flex;
     justify-content: start;
     flex-direction: column;
     margin: 12px;
     border-radius: 8px;
-    height: 320px;
-    width: 30%;
+    height: 310px;
+    max-width: 350px;
     min-width: 290px;
     box-shadow: 0 8px 16px #00000033;
     transition: transform 0.2s;
 }
 
-#lugares div:hover {
+#destinos div:hover {
     transform: scale(1.01);
 }
 
-#destinos .botaolink {
+section .botao_link {
     box-shadow: 0 8px 16px #00000033;
     margin: 18px auto 18px auto;
     width: 20%;
 }
 
-#lugares h3,
-#lugares p {
-    margin-top: auto;
-    margin-bottom: auto;
+#destinos h3,
+#destinos p {
+    margin: auto;
     padding: 0 5px;
 }
 
@@ -172,11 +170,13 @@ ul a:hover {
 }
 
 #slides div {
-    padding: 15px 30px;
+    overflow: hidden;
+    padding: 3px 7px;
     display: flex;
     flex-direction: column;
-    height: 75%;
+    height: 80%;
     width: 35%;
+    min-width: 300px;
     background-color: #ffffffdf;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -185,22 +185,41 @@ ul a:hover {
 
 #slides h1 {
     font-size: 36px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
+    max-width: 80%;
 }
 
 #slides h2 {
+    margin: auto;
+    font-size: 20px;
     font-weight: 500;
-    margin-top: auto;
-    margin-bottom: auto;
+    max-width: 90%;
+}
+
+#slides a {
+    margin: auto;
+    width: 150px;
+}
+
+#banner {
+    padding: 0 0 15px 0;
 }
 
 #legenda {
     font-weight: 500;
     padding: 8px;
+    min-width: 190px;
     color: #ffffff;
     background-color: #4C43E0;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     margin: 0 0 0 auto;
+}
+
+section {
+    padding: 15px 0;
+}
+
+section h1 {
+    margin: 0 0 10px 0;
 }

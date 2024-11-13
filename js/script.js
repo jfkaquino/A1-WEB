@@ -12,13 +12,25 @@ function scrollFunction() {
 function trocarBanner() {
     let banners = [
         {
-            image: './img/1.jpeg',
-            legenda: 'Pão de Açúcar, Rio de Janeiro'
+            image: './img/slide/1.jpeg',
+            legenda: 'Pão de Açúcar'
 
         },
         {
-            image: './img/2.jpg',
-            legenda: 'Alpes Suíços, Suíça'
+            image: './img/slide/2.jpg',
+            legenda: 'Alpes Suíços'
+        },
+        {
+            image: './img/slide/3.jpg',
+            legenda: 'Monte Fuji'
+        },
+        {
+            image: './img/slide/4.png',
+            legenda: 'Grand Canyon'
+        },
+        {
+            image: './img/slide/5.jpg',
+            legenda: 'Muralha da China'
         }
     ];
 
