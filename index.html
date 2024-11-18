@@ -12,25 +12,26 @@
 
 <body>
     <header id="header">
-        <ul>
+        <ul class="menu">
             <li id="logo">
-                <a href="" title="Ir para a tela inicial"><i class="bi bi-airplane-fill"></i> Turismo.com</a>
+                <a href="" title="Ir para a página inicial"><i class="bi bi-airplane-fill"></i> Turismo.com</a>
             </li>
             <li><a href="#destinos">Destinos</a></li>
             <li><a href="">Pacotes</a></li>
             <li><a href="">Contato</a></li>
             <li><a href="">Sobre</a></li>
-            <li style="margin-left: auto"><a class="destaque" href="">Login</a></li>
+            <li id="login"><a href="">Login</a></li>
         </ul>
     </header>
 
     <main>
-        <section id="banner">
+        <section>
             <div id="slides">
                 <div>
                     <h1>As melhores viagens estão aqui!</h1>
-                    <h2>Descubra todas as incríveis experiências que nossa agência de turismo tem a oferecer para você.
-                    </h2>
+                    <h3>Descubra todas as incríveis experiências que nossa agência de turismo tem a oferecer para você e
+                        sua família.
+                    </h3>
                     <a class="botao_link" href="">Quem Somos <i class="bi bi-arrow-right"></i></a>
                 </div>
                 <h3 id="legenda"></h3>
@@ -38,8 +39,8 @@
         </section>
         <section>
             <h1>Conheça os destinos mais populares</h1>
-            <div id="destinos">
-                <div>
+            <div class="container_card">
+                <div .card>
                     <img src="./img/ny.jpg" alt="">
                     <h3>Nova York, EUA</h3>
                     <p>Visite a Estátua da Liberdade com a histórica Ponte do Brooklyn.</p>
@@ -59,29 +60,78 @@
         </section>
         <section id="pacotes">
             <h1>Encontre o pacote de viagem perfeito para você</h1>
-            <div id="destinos">
+            <div class="container_card">
                 <div>
-                    <img src="./img/ny.jpg" alt="">
-                    <h3>Nova York, EUA</h3>
-                    <p>Visite a Estátua da Liberdade com a histórica Ponte do Brooklyn.</p>
+                    <h2><i class="bi bi-star-fill"></i></h2>
+                    <h3>3 dias</h3>
+                    <ul>
+                        <li>Preço definido por pessoa</li>
+                        <li>Estadia em hotel 3 estrelas</li>
+                        <li>Translado entre aeroporto e hotel</li>
+                        <li>Serviço de telefonia gratuito</li>
+                    </ul>
                 </div>
                 <div>
-                    <img src="./img/londres.jpg" alt="">
-                    <h3>Londres, Inglaterra</h3>
-                    <p>Conheça o Big Ben e o Palácio de Buckingham, símbolos da cultura britânica.</p>
+                    <h2><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></h2>
+                    <h3>7 dias</h3>
+                    <ul>
+                        <li>Preço definido por pessoa</li>
+                        <li>Estadia em hotel 4 estrelas</li>
+                        <li>Translado entre aeroporto e hotel</li>
+                        <li>Serviço de telefonia gratuito</li>
+                        <li>Passeios guiados</li>
+                    </ul>
                 </div>
                 <div>
-                    <img src="./img/paris.png" alt="">
-                    <h3>Paris, França</h3>
-                    <p>Faça um tour gastronômico pela culinária francesa em frente a famosa torre Eifell.</p>
+                    <h2><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </h2>
+                    <h3>15 dias</h3>
+                    <ul>
+                        <li>Preço definido por pessoa</li>
+                        <li>Estadia em hotel 5 estrelas</li>
+                        <li>Translado entre aeroporto e hotel</li>
+                        <li>Serviço de telefonia gratuito</li>
+                        <li>Passeios guiados</li>
+                        <li>Seguro viagem</li>
+                    </ul>
                 </div>
             </div>
             <a class="botao_link" href="">Ver mais <i class="bi bi-arrow-right"></i></a>
         </section>
     </main>
 
-    <footer class="destaque">
-        <p>teste</p>
+    <footer>
+        <div id="acesso_rapido">
+            <ul class="secao_link">
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="">Mais procurados</a></li>
+                <li><a href="">Parques temáticos</a></li>
+                <li><a href="">Guia de viagem</a></li>
+            </ul>
+            <ul class="secao_link">
+                <li><a href="./pacotes.html">Pacotes</a></li>
+                <li><a href="">Individual</a></li>
+                <li><a href="">Casal</a></li>
+                <li><a href="">Família</a></li>
+            </ul>
+            <ul class="secao_link">
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="">Agendar atendimento</a></li>
+                <li><a href="">Suporte pós-venda</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+            <ul class="secao_link">
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="">Quem somos</a></li>
+                <li><a href="">Nossa história</a></li>
+                <li><a href="">Trabalhe conosco</a></li>
+            </ul>
+        </div>
+        <br>
+        <p>Turismo.com</p>
+        <p>Desenvolvido por Jorge Aquino.</p>
+        <p>Trabalho avaliativo produzido para a disciplina de Desenvolvimento Web Básico.</p>
+        <br>
     </footer>
     <a href="#header" id="voltar_topo">Voltar ao topo <i class="bi-arrow-up"></i></a>
 

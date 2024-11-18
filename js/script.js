@@ -43,5 +43,5 @@ function trocarBanner() {
     }
 
     showNextBanner(); // Mostrar o primeiro banner imediatamente
-    setInterval(showNextBanner, 5000); // Trocar banner a cada 3 segundos
+    setInterval(showNextBanner, 7000); // Trocar banner a cada 3 segundos
 }

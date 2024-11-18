@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   fill="currentColor"
+   class="bi bi-airplane-fill"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="airplane-fill.svg"
+   inkscape:export-filename="airplane-fill.png"
+   inkscape:export-xdpi="1536"
+   inkscape:export-ydpi="1536"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true"
+     inkscape:zoom="31.3125"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <sodipodi:guide
+       position="16.351297,16"
+       orientation="-0.70710678,-0.70710678"
+       id="guide1"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <path
+     d="m 12.921437,6.8610057 c 0.402395,0.2028744 0.827066,0.5687727 0.827066,1.1389937 0,0.5702221 -0.42539,0.9361204 -0.827066,1.1389945 -0.416048,0.2093956 -0.919761,0.3101086 -1.328623,0.3101086 H 8.9405986 L 7.083113,13.195032 A 1.0778443,1.0868264 0 0 1 6.118802,13.796408 H 5.1257484 A 0.35928144,0.36227545 0 0 1 4.7714971,13.374719 L 5.4311369,9.3846175 3.8122149,9.1129099 2.8651491,10.067868 A 0.35928144,0.36227545 0 0 1 2.2514972,9.8113775 V 6.1886225 A 0.35928144,0.36227545 0 0 1 2.8651491,5.9321315 L 3.8122149,6.8878141 5.4311369,6.6153829 4.7714971,2.6252811 A 0.35928144,0.36227545 0 0 1 5.1257484,2.2035925 H 6.118802 A 1.0778443,1.0868264 0 0 1 7.083113,2.8049697 L 8.9405986,6.550898 h 2.6522154 c 0.408144,0 0.913293,0.1014376 1.328623,0.3101077"
+     id="path1"
+     style="fill:#4c43e0;fill-opacity:1;stroke-width:0.721551" />
+</svg>

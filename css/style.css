@@ -9,18 +9,65 @@ body {
 }
 
 main {
-    text-align: center;
+    box-shadow: inset 0 4px 5px #00000033;
+}
+
+section {
     width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.container_card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container_card div {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    min-height: 300px;
+    max-height: 300px;
+    max-width: 350px;
     min-width: 300px;
+    box-shadow: 0 8px 16px #00000033;
+    transition: transform 0.2s;
+}
+
+.container_card div img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 65%;
+    object-fit: cover;
+}
+
+.container_card h3,
+.container_card p {
     margin: auto;
 }
 
-p {
-    margin: 0;
+.container_card div:hover {
+    transform: scale(1.01);
 }
 
 footer {
-    height: 300px;
+    color: #ffffff;
+    background-color: #4C43E0;
 }
 
 #logo a {
@@ -30,7 +77,16 @@ footer {
     box-shadow: none;
 }
 
-ul {
+#login {
+    margin-left: auto;
+}
+
+#login a {
+    color: #ffffff;
+    background-color: #4C43E0;
+}
+
+.menu {
     margin: 0;
     display: flex;
     align-items: center;
@@ -38,14 +94,13 @@ ul {
     padding: 6px;
     list-style: none;
     overflow: hidden;
-    box-shadow: 0 1px 2px #0000003d;
 }
 
-ul li {
+.menu li {
     float: left;
 }
 
-ul a {
+.menu a {
     display: block;
     color: #000000;
     min-width: 80px;
@@ -54,11 +109,11 @@ ul a {
     text-decoration: none;
     text-align: center;
     font-weight: 500;
-    border-radius: 1000px;
+    border-radius: 100px;
     transition: box-shadow 0.1s ease-in-out;
 }
 
-ul a:hover {
+.menu a:hover {
     box-shadow: 0 2px 4px #00000033;
 }
 
@@ -78,82 +133,24 @@ ul a:hover {
     right: 25px;
 }
 
-.destaque {
-    background-color: #4C43E0;
-    color: #ffffff;
-}
-
 .botao_link {
     background-color: #ffffff;
     box-shadow: 0 8px 16px #00000033;
     display: block;
     color: #000000;
-    min-width: 50px;
-    padding: 10px;
-    margin: 0 3px;
+    width: fit-content;
+    padding: 10px 25px;
+    margin: 5px auto;
     text-decoration: none;
     text-align: center;
     font-weight: 500;
-    border-radius: 1000px;
+    border-radius: 100px;
     transition: background-color 0.1s ease;
 }
 
 .botao_link:hover {
     color: #ffffff;
     background-color: #4C43E0;
-}
-
-#cabecalho {
-    width: 100%;
-    height: 200px;
-    background-color: blue;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#destinos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#destinos img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    height: 60%;
-    object-fit: cover;
-}
-
-#destinos div {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    margin: 12px;
-    border-radius: 8px;
-    height: 310px;
-    max-width: 350px;
-    min-width: 290px;
-    box-shadow: 0 8px 16px #00000033;
-    transition: transform 0.2s;
-}
-
-#destinos div:hover {
-    transform: scale(1.01);
-}
-
-section .botao_link {
-    box-shadow: 0 8px 16px #00000033;
-    margin: 18px auto 18px auto;
-    width: 20%;
-}
-
-#destinos h3,
-#destinos p {
-    margin: auto;
-    padding: 0 5px;
 }
 
 #slides {
@@ -170,45 +167,33 @@ section .botao_link {
 }
 
 #slides div {
-    overflow: hidden;
-    padding: 3px 7px;
+    background-color: #ffffffe0;
+    box-shadow: 0 8px 16px #00000033;
     display: flex;
     flex-direction: column;
-    height: 80%;
-    width: 35%;
-    min-width: 300px;
-    background-color: #ffffffdf;
+    margin: 0 12px 0 0;
+    padding: 25px 10px 20px 10px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    box-shadow: 0 8px 16px #00000033;
+    width: 35%;
+    height: 70%;
 }
 
-#slides h1 {
-    font-size: 36px;
+#slides div h1 {
     margin: auto;
-    max-width: 80%;
+    font-size: 38px;
 }
 
-#slides h2 {
+#slides div h3 {
     margin: auto;
-    font-size: 20px;
     font-weight: 500;
-    max-width: 90%;
-}
-
-#slides a {
-    margin: auto;
-    width: 150px;
-}
-
-#banner {
-    padding: 0 0 15px 0;
 }
 
 #legenda {
+    text-align: start;
     font-weight: 500;
     padding: 8px;
-    min-width: 190px;
+    min-width: 180px;
     color: #ffffff;
     background-color: #4C43E0;
     border-top-left-radius: 8px;
@@ -216,10 +201,52 @@ section .botao_link {
     margin: 0 0 0 auto;
 }
 
-section {
-    padding: 15px 0;
+#acesso_rapido {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px #ffffff;
 }
 
-section h1 {
-    margin: 0 0 10px 0;
+.secao_link {
+    padding: 10px;
+    margin: 0 30px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.secao_link a {
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.secao_link a:hover {
+    text-decoration: underline #ffffff;
+}
+
+.secao_link li:first-child a {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#pacotes .container_card div h3 {
+    margin: 0;
+}
+
+#pacotes .container_card div h2 {
+    font-size: 40px;
+    color: #f7e330;
+    margin: auto 0;
+    display: inline;
+}
+
+#pacotes div:last-child {
+    flex-grow: 1;
 }
