@@ -8,14 +8,9 @@ body {
     background-color: #fafafa;
 }
 
-main {
-    box-shadow: inset 0 4px 5px #00000033;
-}
-
 section {
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
 }
 
 h1,
@@ -29,13 +24,57 @@ p {
     padding: 5px;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #4C43E0;
+}
+
+#acesso_rapido {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px #ffffff;
+}
+
+.secao_link {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 30px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.secao_link a {
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container_geral a:hover {
+    text-decoration: underline;
+}
+
+.secao_link li:first-child a {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
 .container_card {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.container_card div {
+.container_card .card {
     display: flex;
     flex-direction: column;
     margin: 12px;
@@ -49,7 +88,7 @@ p {
     transition: transform 0.2s;
 }
 
-.container_card div img {
+.container_card .card img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     height: 65%;
@@ -61,29 +100,8 @@ p {
     margin: auto;
 }
 
-.container_card div:hover {
+.container_card .card:hover {
     transform: scale(1.01);
-}
-
-footer {
-    color: #ffffff;
-    background-color: #4C43E0;
-}
-
-#logo a {
-    color: #4C43E0;
-    font-weight: bold;
-    font-size: 20px;
-    box-shadow: none;
-}
-
-#login {
-    margin-left: auto;
-}
-
-#login a {
-    color: #ffffff;
-    background-color: #4C43E0;
 }
 
 .menu {
@@ -94,6 +112,7 @@ footer {
     padding: 6px;
     list-style: none;
     overflow: hidden;
+    box-shadow: 0 4px 5px #00000033;
 }
 
 .menu li {
@@ -115,6 +134,23 @@ footer {
 
 .menu a:hover {
     box-shadow: 0 2px 4px #00000033;
+    text-decoration: none;
+}
+
+#logo a {
+    color: #4C43E0;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: none;
+}
+
+#botao_login {
+    margin-left: auto;
+}
+
+#botao_login a {
+    color: #ffffff;
+    background-color: #4C43E0;
 }
 
 #voltar_topo {
@@ -133,7 +169,12 @@ footer {
     right: 25px;
 }
 
-.botao_link {
+.botao_link,
+input[type=button],
+input[type=submit] {
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    border: 0;
     background-color: #ffffff;
     box-shadow: 0 8px 16px #00000033;
     display: block;
@@ -148,7 +189,11 @@ footer {
     transition: background-color 0.1s ease;
 }
 
-.botao_link:hover {
+.botao_link:hover,
+input[type=button]:hover,
+input[type=submit]:hover {
+    text-decoration: none;
+    cursor: pointer;
     color: #ffffff;
     background-color: #4C43E0;
 }
@@ -201,52 +246,85 @@ footer {
     margin: 0 0 0 auto;
 }
 
-#acesso_rapido {
-    width: 90%;
-    padding: 10px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    border-bottom: solid 1px #ffffff;
-}
-
-.secao_link {
-    padding: 10px;
-    margin: 0 30px;
-    list-style: none;
-    overflow: hidden;
-}
-
-.secao_link a {
-    text-align: center;
-    display: block;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 100px;
-}
-
-.secao_link a:hover {
-    text-decoration: underline #ffffff;
-}
-
-.secao_link li:first-child a {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-#pacotes .container_card div h3 {
-    margin: 0;
-}
-
-#pacotes .container_card div h2 {
-    font-size: 40px;
-    color: #f7e330;
+#pacotes .container_card .card h2 {
+    font-size: 50px;
+    color: #f8e324;
     margin: auto 0;
     display: inline;
 }
 
-#pacotes div:last-child {
+#pacotes .container_card .card:last-child {
     flex-grow: 1;
+}
+
+.container_geral {
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px #00000033;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.container_geral form #grupo_checkbox {
+    text-align: center;
+    width: 100%;
+}
+
+.container_geral form input[id=mensagem] {
+    height: 60px;
+}
+
+.container_geral i {
+    font-size: 120px;
+    color: #4C43E0;
+    display: block;
+    margin: auto auto 0 auto;
+}
+
+.container_geral a {
+    text-align: center;
+    display: block;
+    color: #4C43E0;
+    text-decoration: none;
+    margin: 5px auto;
+}
+
+.container_geral form input[type=submit] {
+    width: fit-content;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel] {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 1px #00000033;
+    border: 0;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    accent-color: #4C43E0;
+}
+
+#relatos .container_card .card img {
+    border-radius: 1000px;
+    width: 55%;
+    margin: 10px auto 0 auto;
+    object-fit: fill contain;
+}
+
+#relatos .container_card .card p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
