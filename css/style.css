@@ -24,6 +24,12 @@ p {
     padding: 5px;
 }
 
+mark {
+    font-weight: 500;
+    background-color: #4C43E0;
+    color: #ffffff;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -46,7 +52,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin: 0 30px;
+    margin: 0 auto;
     list-style: none;
     overflow: hidden;
 }
@@ -58,7 +64,8 @@ footer {
     text-decoration: none;
 }
 
-.container_geral a:hover {
+.container_geral a:hover,
+.secao_link a:hover {
     text-decoration: underline;
 }
 
@@ -75,6 +82,7 @@ footer {
 }
 
 .container_card .card {
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     margin: 12px;
@@ -260,7 +268,7 @@ input[type=submit]:hover {
 .container_geral {
     background-color: #ffffff;
     box-shadow: 0 8px 16px #00000033;
-    padding: 10px;
+    padding: 15px;
     width: 80%;
     margin: 20px auto;
     display: flex;
@@ -268,6 +276,11 @@ input[type=submit]:hover {
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 8px;
+}
+
+.container_geral .card_geral {
+    display: flex;
+    flex-direction: column;
 }
 
 .container_geral form #grupo_checkbox {
@@ -301,7 +314,8 @@ input[type=submit]:hover {
 input[type=text],
 input[type=email],
 input[type=password],
-input[type=tel] {
+input[type=tel],
+textarea {
     display: block;
     width: 70%;
     margin: 10px auto;
@@ -327,4 +341,26 @@ input[type=radio] {
 
 #relatos .container_card .card p {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#sobre * {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: justify;
+}
+
+.video-list-container {
+    display: flex;
+    align-items: flex-start;
+    /* Alinha os itens no início */
+}
+
+.video {
+    margin: 20px 5px;
+    /* Espaçamento entre o vídeo e a lista */
+}
+
+.list {
+    margin: 5px;
+    /* Limitar a largura da lista, se necessário */
 }

@@ -1,7 +1,7 @@
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { mostrarBotaoTopo() };
 window.onload = function () { trocarBanner() };
 
-function scrollFunction() {
+function mostrarBotaoTopo() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("voltar_topo").style.visibility = "visible";
     } else {
@@ -12,36 +12,38 @@ function scrollFunction() {
 function trocarBanner() {
     let banners = [
         {
-            image: './img/slide/1.jpeg',
+            imagem: './img/slide/1.jpeg',
             legenda: 'Pão de Açúcar'
 
         },
         {
-            image: './img/slide/2.jpg',
+            imagem: './img/slide/2.jpg',
             legenda: 'Alpes Suíços'
         },
         {
-            image: './img/slide/3.jpg',
+            imagem: './img/slide/3.jpg',
             legenda: 'Monte Fuji'
         },
         {
-            image: './img/slide/4.png',
+            imagem: './img/slide/4.png',
             legenda: 'Grand Canyon'
         },
         {
-            image: './img/slide/5.jpg',
+            imagem: './img/slide/5.jpg',
             legenda: 'Muralha da China'
         }
     ];
 
     let currentIndex = 0;
 
-    function showNextBanner() {
-        document.getElementById("slides").style.backgroundImage = `url(${banners[currentIndex].image})`;
+    function mostrarProximoBanner() {
+        document.getElementById("slides").style.backgroundImage = `url(${banners[currentIndex].imagem})`;
         document.getElementById("legenda").innerHTML = `<i class="bi bi-geo-alt-fill"></i> ${banners[currentIndex].legenda}`;
         currentIndex = (currentIndex + 1) % banners.length;
     }
 
-    showNextBanner(); // Mostrar o primeiro banner imediatamente
-    setInterval(showNextBanner, 7000); // Trocar banner a cada 3 segundos
+    mostrarProximoBanner(); // Mostrar o primeiro banner imediatamente
+    setInterval(mostrarProximoBanner, 7000); // Trocar banner a cada 3 segundos
 }
+
+function mostrarDados() { }
