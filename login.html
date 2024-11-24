@@ -11,31 +11,32 @@
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <ul class="menu">
             <li id="logo">
                 <a href="./index.html" title="Ir para a página inicial"><i class="bi bi-airplane-fill"></i>
                     Turismo.com</a>
             </li>
-            <li><a href="#destinos">Destinos</a></li>
-            <li><a href="">Pacotes</a></li>
-            <li><a href="./contato.html">Contato</a></li>
-            <li><a href="">Sobre</a></li>
-            <li id="botao_login"><a href="./login.html">Login</a></li>
+            <li class="item_menu"><a href="destinos.html">Destinos</a></li>
+            <li class="item_menu"><a href="pacotes.html">Pacotes</a></li>
+            <li class="item_menu"><a href="contato.html">Contato</a></li>
+            <li class="item_menu"><a href="sobre.html">Sobre</a></li>
+            <li class="item_menu" id="botao_login"><a href="login.html">Login</a></li>
+            <li id="mostrar_menu"><button class="botao_link" id="botao_menu"><i class="bi bi-list"></i></button>
         </ul>
     </header>
 
     <main>
         <section>
             <div class="container_geral">
-                <i class="bi bi-person-circle"></i>
+                <i id="icone_titulo" class="bi bi-person-circle"></i>
                 <h1>Fazer login</h1>
                 <p>Faça login em sua conta para continuar.</p>
                 <input type="email" name="usuario" id="usuario" placeholder="E-mail">
                 <input type="password" name="senha" id="senha" placeholder="Senha">
                 <input type="submit" value="Login">
-                <a href="">Criar conta</a>
-                <a href="">Esqueci minha senha</a>
+                <a class="link_simples" href="">Criar conta</a>
+                <a class="link_simples" href="">Esqueci minha senha</a>
             </div>
         </section>
     </main>
@@ -73,7 +74,7 @@
         <p>Trabalho avaliativo produzido para a disciplina de Desenvolvimento Web Básico.</p>
         <br>
     </footer>
-    <a href="#header" id="voltar_topo">Voltar ao topo <i class="bi-arrow-up"></i></a>
+    <a href="#" id="voltar_topo">Voltar ao topo <i class="bi bi-arrow-up"></i></a>
 
     <script src="./js/script.js"></script>
 </body>

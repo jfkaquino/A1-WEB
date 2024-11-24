@@ -5,6 +5,7 @@ html {
 
 body {
     margin: 0;
+    min-width: 340px;
     background-color: #fafafa;
 }
 
@@ -30,7 +31,7 @@ mark {
     color: #ffffff;
 }
 
-a:hover {
+.link_simples:hover {
     text-decoration: underline;
 }
 
@@ -39,7 +40,7 @@ footer {
     background-color: #4C43E0;
 }
 
-#acesso_rapido {
+.acesso_rapido {
     width: 90%;
     padding: 10px;
     margin: 0 auto;
@@ -62,11 +63,6 @@ footer {
     display: block;
     color: #ffffff;
     text-decoration: none;
-}
-
-.container_geral a:hover,
-.secao_link a:hover {
-    text-decoration: underline;
 }
 
 .secao_link li:first-child a {
@@ -124,7 +120,7 @@ footer {
 }
 
 .menu li {
-    float: left;
+    margin: 0 3px;
 }
 
 .menu a {
@@ -132,7 +128,6 @@ footer {
     color: #000000;
     min-width: 80px;
     padding: 10px;
-    margin: 0 3px;
     text-decoration: none;
     text-align: center;
     font-weight: 500;
@@ -159,6 +154,11 @@ footer {
 #botao_login a {
     color: #ffffff;
     background-color: #4C43E0;
+}
+
+#mostrar_menu {
+    display: none;
+    margin-left: auto;
 }
 
 #voltar_topo {
@@ -212,7 +212,7 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 420px;
+    min-height: 420px;
     width: 100%;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -224,21 +224,19 @@ input[type=submit]:hover {
     box-shadow: 0 8px 16px #00000033;
     display: flex;
     flex-direction: column;
-    margin: 0 12px 0 0;
-    padding: 25px 10px 20px 10px;
+    margin: 0;
+    padding: 15px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     width: 35%;
-    height: 70%;
+    height: fit-content;
 }
 
 #slides div h1 {
-    margin: auto;
     font-size: 38px;
 }
 
 #slides div h3 {
-    margin: auto;
     font-weight: 500;
 }
 
@@ -292,14 +290,15 @@ input[type=submit]:hover {
     height: 60px;
 }
 
-.container_geral i {
+#icone_titulo {
+    text-align: center;
     font-size: 120px;
     color: #4C43E0;
     display: block;
     margin: auto auto 0 auto;
 }
 
-.container_geral a {
+.link_simples {
     text-align: center;
     display: block;
     color: #4C43E0;
@@ -336,31 +335,104 @@ input[type=radio] {
     border-radius: 1000px;
     width: 55%;
     margin: 10px auto 0 auto;
-    object-fit: fill contain;
 }
 
 #relatos .container_card .card p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#sobre * {
+#sobre h2,
+#sobre p,
+#sobre h4,
+#sobre li {
     margin: 0 auto;
     max-width: 80%;
     text-align: justify;
 }
 
-.video-list-container {
+#sobre ul {
+    margin: 5px auto;
+    width: 80%;
+}
+
+.container_destaque {
     display: flex;
-    align-items: flex-start;
-    /* Alinha os itens no início */
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .video {
-    margin: 20px 5px;
-    /* Espaçamento entre o vídeo e a lista */
+    margin: 5px auto;
+    width: 90%;
+    max-width: 700px;
+    height: 394px;
 }
 
-.list {
-    margin: 5px;
-    /* Limitar a largura da lista, se necessário */
+.container_destaque ol {
+    padding-left: 0;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+@media(max-width: 900px) {
+
+    section {
+        width: 100%;
+    }
+}
+
+@media(max-width: 730px) {
+
+    .menu a {
+        min-width: 55px;
+    }
+
+    #slides div {
+        font-size: 20px;
+        width: 100%;
+        margin: auto;
+    }
+
+    #slides div h1 {
+        font-size: 36px;
+    }
+
+    #legenda {
+        border-radius: 8px;
+        margin: auto;
+        width: 20%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 580px) {
+
+    .item_menu,
+    #botao_login {
+        margin: 5px;
+        margin: 5px auto;
+        width: 80%;
+        display: none;
+    }
+
+    #mostrar_menu {
+        display: list-item;
+    }
+
+    .acesso_rapido {
+        display: block;
+    }
+}
+
+@media(min-width: 580px) {
+
+    .item_menu {
+        display: list-item !important;
+    }
+
+    .menu {
+        flex-direction: row !important;
+    }
 }

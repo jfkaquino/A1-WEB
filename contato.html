@@ -17,18 +17,19 @@
                 <a href="./index.html" title="Ir para a página inicial"><i class="bi bi-airplane-fill"></i>
                     Turismo.com</a>
             </li>
-            <li><a href="#destinos">Destinos</a></li>
-            <li><a href="#">Pacotes</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li id="botao_login"><a href="./login.html">Login</a></li>
+            <li class="item_menu"><a href="destinos.html">Destinos</a></li>
+            <li class="item_menu"><a href="pacotes.html">Pacotes</a></li>
+            <li class="item_menu"><a href="contato.html">Contato</a></li>
+            <li class="item_menu"><a href="sobre.html">Sobre</a></li>
+            <li class="item_menu" id="botao_login"><a href="login.html">Login</a></li>
+            <li id="mostrar_menu"><button class="botao_link" id="botao_menu"><i class="bi bi-list"></i></button>
         </ul>
     </header>
 
     <main>
         <section id="enviar_mensagem">
             <div class="container_geral">
-                <i class="bi bi-chat-left-text-fill"></i>
+                <i id="icone_titulo" class="bi bi-chat-left-text-fill"></i>
                 <h1>Entre em contato conosco</h1>
                 <p>Insira suas informações de contato para ser atendido por um de nossos agentes de turismo.</p>
                 <form>
@@ -43,6 +44,11 @@
                     <textarea name="mensagem" cols="40" rows="5" required></textarea>
                     <input type="submit" value="Enviar solicitação">
                 </form>
+                <br>
+                <p id="fazer_relato">Elogios? Críticas? Sugestões? Estamos abertos para escutar sua opinião.</p>
+                <p>Faça um relato de sua viagem
+                    conosco pelo e-mail:</p>
+                <a class="link_simples" href="mailto:rh@turismo.com">ouvidoria@turismo.com</a>
             </div>
         </section>
     </main>

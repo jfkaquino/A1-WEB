@@ -46,4 +46,19 @@ function trocarBanner() {
     setInterval(mostrarProximoBanner, 7000); // Trocar banner a cada 3 segundos
 }
 
-function mostrarDados() { }
+document.getElementById("botao_menu").addEventListener("click", function () {
+    const item_menu = document.getElementsByClassName("item_menu");
+    const menu = document.getElementsByClassName("menu")[0]; // Acessa o primeiro elemento da classe "menu"
+
+    if (item_menu[0].style.display === "none" || item_menu[0].style.display === "") {
+        menu.style.flexDirection = "column";
+        for (let i = 0; i < item_menu.length; i++) {
+            item_menu[i].style.display = "list-item";
+        }
+    } else {
+        for (let i = 0; i < item_menu.length; i++) {
+            item_menu[i].style.display = "none";
+        }
+        menu.style.flexDirection = "row";
+    }
+});
