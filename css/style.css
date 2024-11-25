@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 html {
     scroll-behavior: smooth;
     font-family: 'Segoe UI', sans-serif;
@@ -9,11 +10,13 @@ body {
     background-color: #fafafa;
 }
 
+/* Seções */
 section {
     width: 90%;
     margin: 0 auto 20px auto;
 }
 
+/* Estilos de Texto */
 h1,
 h2,
 h3,
@@ -31,15 +34,28 @@ mark {
     color: #ffffff;
 }
 
+mark:hover {
+    text-decoration: dotted underline;
+}
+
+/* Links Simples */
+.link_simples {
+    text-align: center;
+    color: #4C43E0;
+    text-decoration: none;
+}
+
 .link_simples:hover {
     text-decoration: underline;
 }
 
+/* Rodapé */
 footer {
     color: #ffffff;
     background-color: #4C43E0;
 }
 
+/* Acesso Rápido */
 .acesso_rapido {
     width: 90%;
     padding: 10px;
@@ -49,6 +65,7 @@ footer {
     border-bottom: solid 1px #ffffff;
 }
 
+/* Seção de Links */
 .secao_link {
     display: flex;
     flex-direction: column;
@@ -65,12 +82,17 @@ footer {
     text-decoration: none;
 }
 
+.secao_link a:hover {
+    text-decoration: underline;
+}
+
 .secao_link li:first-child a {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
+/* Estilos de Cartões */
 .container_card {
     display: flex;
     justify-content: center;
@@ -85,7 +107,6 @@ footer {
     padding-bottom: 10px;
     border-radius: 8px;
     min-height: 300px;
-    max-height: 300px;
     max-width: 350px;
     min-width: 300px;
     box-shadow: 0 8px 16px #00000033;
@@ -101,6 +122,7 @@ footer {
 
 .container_card h3,
 .container_card p {
+    padding: 5px;
     margin: auto;
 }
 
@@ -108,6 +130,7 @@ footer {
     transform: scale(1.01);
 }
 
+/* Menu */
 .menu {
     margin: 0;
     display: flex;
@@ -137,8 +160,17 @@ footer {
 
 .menu a:hover {
     box-shadow: 0 2px 4px #00000033;
-    text-decoration: none;
 }
+
+.botao_link:hover,
+input[type=button]:hover,
+input[type=submit]:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4C43E0;
+}
+
+/* Logo e Botão de Login */
 
 #logo a {
     color: #4C43E0;
@@ -156,11 +188,7 @@ footer {
     background-color: #4C43E0;
 }
 
-#mostrar_menu {
-    display: none;
-    margin-left: auto;
-}
-
+/* Botão de Voltar ao Topo */
 #voltar_topo {
     display: block;
     visibility: hidden;
@@ -177,6 +205,7 @@ footer {
     right: 25px;
 }
 
+/* Botões e Inputs */
 .botao_link,
 input[type=button],
 input[type=submit] {
@@ -206,6 +235,7 @@ input[type=submit]:hover {
     background-color: #4C43E0;
 }
 
+/* Slides */
 #slides {
     background-position: center;
     background-size: cover;
@@ -240,6 +270,7 @@ input[type=submit]:hover {
     font-weight: 500;
 }
 
+/* Legenda */
 #legenda {
     text-align: start;
     font-weight: 500;
@@ -252,7 +283,9 @@ input[type=submit]:hover {
     margin: 0 0 0 auto;
 }
 
-#pacotes .container_card .card h2 {
+/* Estilos Específicos */
+#pacotes .container_card .card h2,
+#servicos_inclusos .container_card .card h2 {
     font-size: 50px;
     color: #f8e324;
     margin: auto 0;
@@ -290,6 +323,7 @@ input[type=submit]:hover {
     height: 60px;
 }
 
+/* Ícone e Botão do Menu */
 #icone_titulo {
     text-align: center;
     font-size: 120px;
@@ -298,18 +332,21 @@ input[type=submit]:hover {
     margin: auto auto 0 auto;
 }
 
-.link_simples {
-    text-align: center;
-    display: block;
-    color: #4C43E0;
-    text-decoration: none;
-    margin: 5px auto;
+#botao_menu {
+    box-shadow: none;
+    font-size: 18px;
+}
+
+#mostrar_menu {
+    display: none;
+    margin-left: auto;
 }
 
 .container_geral form input[type=submit] {
     width: fit-content;
 }
 
+/* Inputs e Textareas */
 input[type=text],
 input[type=email],
 input[type=password],
@@ -331,6 +368,7 @@ input[type=radio] {
     accent-color: #4C43E0;
 }
 
+/* Relatos */
 #relatos .container_card .card img {
     border-radius: 1000px;
     width: 55%;
@@ -376,15 +414,33 @@ input[type=radio] {
     text-align: center;
 }
 
-@media(max-width: 900px) {
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4C43E0;
+    color: white;
+}
+
+@media(max-width: 900px) {
     section {
         width: 100%;
     }
 }
 
 @media(max-width: 730px) {
-
     .menu a {
         min-width: 55px;
     }
@@ -393,6 +449,7 @@ input[type=radio] {
         font-size: 20px;
         width: 100%;
         margin: auto;
+        height: fit-content;
     }
 
     #slides div h1 {
@@ -407,7 +464,7 @@ input[type=radio] {
     }
 }
 
-@media(max-width: 580px) {
+@media(max-width: 620px) {
 
     .item_menu,
     #botao_login {
@@ -426,7 +483,7 @@ input[type=radio] {
     }
 }
 
-@media(min-width: 580px) {
+@media(min-width: 620px) {
 
     .item_menu {
         display: list-item !important;
