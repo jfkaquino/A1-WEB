@@ -45,7 +45,14 @@ mark:hover {
     text-decoration: none;
 }
 
-.link_simples:hover {
+.link_rodape {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link_simples:hover,
+.link_rodape:hover {
     text-decoration: underline;
 }
 
@@ -284,14 +291,6 @@ input[type=submit]:hover {
 }
 
 /* Estilos Específicos */
-#pacotes .container_card .card h2,
-#servicos_inclusos .container_card .card h2 {
-    font-size: 50px;
-    color: #f8e324;
-    margin: auto 0;
-    display: inline;
-}
-
 #pacotes .container_card .card:last-child {
     flex-grow: 1;
 }
@@ -324,17 +323,23 @@ input[type=submit]:hover {
 }
 
 /* Ícone e Botão do Menu */
+.icone {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
 #icone_titulo {
-    text-align: center;
-    font-size: 120px;
-    color: #4C43E0;
-    display: block;
-    margin: auto auto 0 auto;
+    padding: 5px;
+    height: 75px;
+    width: auto;
+    vertical-align: middle;
+    margin: auto;
 }
 
 #botao_menu {
     box-shadow: none;
-    font-size: 18px;
 }
 
 #mostrar_menu {

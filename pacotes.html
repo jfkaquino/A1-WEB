@@ -14,7 +14,8 @@
     <header>
         <ul class="menu">
             <li id="logo">
-                <a href="./index.html" title="Ir para a página inicial"><i class="bi bi-airplane-fill"></i>
+                <a href="./index.html" title="Ir para a página inicial"><img src="./img/icons/airplane-fill.svg"
+                        class="icone" alt="Logo">
                     Turismo.com</a>
             </li>
             <li class="item_menu"><a href="destinos.html">Destinos</a></li>
@@ -22,7 +23,8 @@
             <li class="item_menu"><a href="contato.html">Contato</a></li>
             <li class="item_menu"><a href="sobre.html">Sobre</a></li>
             <li class="item_menu" id="botao_login"><a href="login.html">Login</a></li>
-            <li id="mostrar_menu"><button class="botao_link" id="botao_menu"><i class="bi bi-list"></i></button>
+            <li id="mostrar_menu"><button class="botao_link" id="botao_menu"><img .class="icone"
+                        src="./img/icons/list.svg" alt="Abrir menu"></button></li>
         </ul>
     </header>
 
@@ -66,12 +68,13 @@
                     informações.</p>
             </div>
         </section>
-
         <section id="servicos_inclusos">
-            <h1>Conheça os serviços inclusos em cada pacote</h1>
+            <h1>Encontre o pacote de viagem perfeito para você</h1>
             <div class="container_card">
                 <div class="card">
-                    <h2><i class="bi bi-star-fill"></i></h2>
+                    <div id="icone_titulo">
+                        <img id="icone_titulo" src="./img/icons/star-fill.svg" alt="Estrela">
+                    </div>
                     <h3>até 3 dias</h3>
                     <ul>
                         <li>Preço definido por pessoa</li>
@@ -81,7 +84,10 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <h2><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></h2>
+                    <div id="icone_titulo">
+                        <img id="icone_titulo" src="./img/icons/star-fill.svg" alt="Estrela"><img id="icone_titulo"
+                            src="./img/icons/star-fill.svg" alt="Estrela">
+                    </div>
                     <h3>até 7 dias</h3>
                     <ul>
                         <li>Preço definido por pessoa</li>
@@ -92,8 +98,11 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <h2><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </h2>
+                    <div id="icone_titulo">
+                        <img id="icone_titulo" src="./img/icons/star-fill.svg" alt="Estrela"><img id="icone_titulo"
+                            src="./img/icons/star-fill.svg" alt="Estrela"><img id="icone_titulo"
+                            src="./img/icons/star-fill.svg" alt="Estrela">
+                    </div>
                     <h3>15 dias ou mais</h3>
                     <ul>
                         <li>Preço definido por pessoa</li>
@@ -105,7 +114,7 @@
                     </ul>
                 </div>
             </div>
-            <a class="botao_link" href="contato.html">Entre em contato <i class="bi bi-arrow-right"></i></a>
+            <a class="botao_link" href="contato.html">Entre em contato</a>
         </section>
     </main>
 
@@ -135,13 +144,13 @@
         </div>
         <br>
         <p>Turismo.com | Todos os direitos reservados.</p>
-        <p>Desenvolvido por Jorge Aquino <a class="link_simples" style="color: white"
+        <p>Desenvolvido por Jorge Aquino <a class="link_rodape"
                 href="https://github.com/UnfairerList50?tab=repositories">(Repositório GitHub)</a></p>
         <p>Trabalho avaliativo produzido para a disciplina de Desenvolvimento Web Básico, orientado pelo Prof. Fabricio
             Olivo.</p>
         <br>
     </footer>
-    <a href="#" id="voltar_topo">Voltar ao topo <i class="bi bi-arrow-up"></i></a>
+    <a href="#" id="voltar_topo">Voltar ao topo</a>
 
     <script src="./js/script.js"></script>
 </body>

@@ -1,5 +1,6 @@
+// Função para voltar ao topo da página
+
 window.onscroll = function () { mostrarBotaoTopo() };
-window.onload = function () { trocarBanner() };
 
 function mostrarBotaoTopo() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -8,6 +9,10 @@ function mostrarBotaoTopo() {
         document.getElementById("voltar_topo").style.visibility = "hidden";
     }
 }
+
+// Função para trocar o banner (slide) da página inicial
+
+window.onload = function () { trocarBanner() };
 
 function trocarBanner() {
     let banners = [
@@ -38,7 +43,7 @@ function trocarBanner() {
 
     function mostrarProximoBanner() {
         document.getElementById("slides").style.backgroundImage = `url(${banners[currentIndex].imagem})`;
-        document.getElementById("legenda").innerHTML = `<i class="bi bi-geo-alt-fill"></i> ${banners[currentIndex].legenda}`;
+        document.getElementById("legenda").innerHTML = banners[currentIndex].legenda;
         currentIndex = (currentIndex + 1) % banners.length;
     }
 
@@ -46,32 +51,30 @@ function trocarBanner() {
     setInterval(mostrarProximoBanner, 7000);
 }
 
+// Função para controlar o menu responsivo
+
 document.getElementById("botao_menu").addEventListener("click", function () {
+
     const item_menu = document.getElementsByClassName("item_menu");
     const menu = document.getElementsByClassName("menu")[0];
-    const botao_menu = document.getElementById("botao_menu");
 
     if (item_menu[0].style.display === "none" || item_menu[0].style.display === "") {
         menu.style.flexDirection = "column";
         for (let i = 0; i < item_menu.length; i++) {
             item_menu[i].style.display = "list-item";
         }
-        botao_menu.innerHTML = '<i class="bi bi-x"></i>';
     } else {
         for (let i = 0; i < item_menu.length; i++) {
             item_menu[i].style.display = "none";
         }
         menu.style.flexDirection = "row";
-        botao_menu.innerHTML = '<i class="bi bi-list"></i>';
     }
-
-    console.log(botao_menu.innerHTML);
 });
 
-document.getElementById('form_contato').onsubmit = function (event) {
-    event.preventDefault(); // Impede o envio do formulário
+// Função para exibir os dados do formulário
 
-    // Coleta os dados do formulário
+document.getElementById('form_contato').onsubmit = function (event) {
+
     let nome = document.getElementById('nome').value;
     let email = document.getElementById('email').value;
     let telefone = document.getElementById('telefone').value;
