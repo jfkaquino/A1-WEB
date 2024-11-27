@@ -23,18 +23,14 @@ function trocarBanner() {
         },
         {
             imagem: './img/slide/2.jpg',
-            legenda: 'Alpes Suíços'
-        },
-        {
-            imagem: './img/slide/3.jpg',
             legenda: 'Monte Fuji'
         },
         {
-            imagem: './img/slide/4.png',
+            imagem: './img/slide/3.png',
             legenda: 'Grand Canyon'
         },
         {
-            imagem: './img/slide/5.jpg',
+            imagem: './img/slide/4.jpg',
             legenda: 'Muralha da China'
         }
     ];
